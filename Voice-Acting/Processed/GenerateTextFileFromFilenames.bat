@@ -2,7 +2,7 @@
 
 :: COMMENT, get all paths for subfolders
 >path_to_all_voicelines.txt (
-  forfiles /s /m *.mp3 /c "cmd /c echo @path"
+  forfiles /s /m *.ogg /c "cmd /c echo @path"
 )
 
 echo Got paths, now stripping
