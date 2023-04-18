@@ -1,7 +1,7 @@
 @echo off
 
 :: COMMENT, get all paths for subfolders
->path_to_all_files.txt.txt (
+>path_to_all_files.txt (
   forfiles /s /m *.jpg /c "cmd /c echo @path"
 )
 
@@ -11,7 +11,7 @@ echo Got paths, now stripping
 SET mypath=%~dp0
 echo %mypath%
 
-call:DoReplace "%mypath%" "" path_to_all_files.txt.txt path_to_all_files.txt.txt
+call:DoReplace "%mypath%" "" path_to_all_files.txt path_to_all_files.txt
 exit /b
 
 :DoReplace
